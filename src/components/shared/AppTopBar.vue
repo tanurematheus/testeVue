@@ -2,7 +2,7 @@
   <v-container>
     <v-app-bar app color="green" dark>
       <v-app-bar-nav-icon @click="drawer = true"> </v-app-bar-nav-icon>
-      <v-toolbar-title> Campeonato Brasileiro ⚽ </v-toolbar-title>
+      <v-toolbar-title> Campeonato Brasileiro 2022 ⚽ </v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
