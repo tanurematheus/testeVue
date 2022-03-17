@@ -2,7 +2,10 @@
   <v-container>
     <v-app-bar app color="green" dark>
       <v-app-bar-nav-icon @click="drawer = true"> </v-app-bar-nav-icon>
-      <v-toolbar-title> Campeonato Brasileiro ⚽ </v-toolbar-title>
+      <v-toolbar-title>
+        Campeonato Brasileiro
+        <v-btn color="transparent" @click="darkMode"> ⚽ </v-btn>
+      </v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list nav dense>
@@ -41,6 +44,11 @@ export default {
       drawer: false,
       group: null,
     };
+  },
+  methods: {
+    darkMode() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+    },
   },
 };
 </script>
