@@ -3,7 +3,7 @@
     <v-app-bar app color="green" dark>
       <v-app-bar-nav-icon @click="drawer = true"> </v-app-bar-nav-icon>
       <v-toolbar-title>
-        Campeonato Brasileiro
+        Campeonato Brasileiro 2022
         <v-btn color="transparent" @click="darkMode"> ⚽ </v-btn>
       </v-toolbar-title>
     </v-app-bar>
