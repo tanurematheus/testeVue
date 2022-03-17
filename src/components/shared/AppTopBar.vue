@@ -3,8 +3,8 @@
     <v-app-bar app color="green" dark>
       <v-app-bar-nav-icon @click="drawer = true"> </v-app-bar-nav-icon>
       <v-toolbar-title>
-        Campeonato Brasileiro 2022
-        <v-btn color="transparent" @click="darkMode"> ⚽ </v-btn>
+        Campeonato Brasileiro
+        <v-btn class="btn" color="transparent" @click="darkMode"> ⚽ </v-btn>
       </v-toolbar-title>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" absolute temporary>
@@ -56,5 +56,9 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
+}
+
+.btn {
+  box-shadow: none;
 }
 </style>
